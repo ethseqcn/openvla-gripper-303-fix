@@ -1,0 +1,104 @@
+{
+  "alignment_sweep": [
+    {
+      "compared_rows": 113,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 3.539823,
+      "mismatches": 4,
+      "name": "no_inversion_offset_-2",
+      "offset": -2
+    },
+    {
+      "compared_rows": 114,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 3.508772,
+      "mismatches": 4,
+      "name": "no_inversion_offset_-1",
+      "offset": -1
+    },
+    {
+      "compared_rows": 115,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 5.217391,
+      "mismatches": 6,
+      "name": "no_inversion_offset_+0",
+      "offset": 0
+    },
+    {
+      "compared_rows": 114,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 8.77193,
+      "mismatches": 10,
+      "name": "no_inversion_offset_+1",
+      "offset": 1
+    },
+    {
+      "compared_rows": 113,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 12.389381,
+      "mismatches": 14,
+      "name": "no_inversion_offset_+2",
+      "offset": 2
+    }
+  ],
+  "input_hashes": {
+    "fractal20220817_data_original_actions.csv": "e10699ab156e6e992a9f9db2ad6995a8ab63cf47cc0ee601f9cc67a2c9f9d3aa",
+    "fractal20220817_data_predicted_actions.csv": "1bea648ada2c43cd5cd5d14443c8d7e764beef94b52eaae8a43baa8d06eb467b"
+  },
+  "placebo_controls": [
+    {
+      "compared_rows": 115,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 52.173913,
+      "mismatches": 60,
+      "name": "circular_shift_placebo_17",
+      "offset": 0
+    },
+    {
+      "compared_rows": 115,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 69.565217,
+      "mismatches": 80,
+      "name": "circular_shift_placebo_43",
+      "offset": 0
+    },
+    {
+      "compared_rows": 115,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 69.565217,
+      "mismatches": 80,
+      "name": "circular_shift_placebo_71",
+      "offset": 0
+    }
+  ],
+  "primary": [
+    {
+      "compared_rows": 115,
+      "invert_prediction": true,
+      "mismatch_rate_percent": 94.782609,
+      "mismatches": 109,
+      "name": "extra_prediction_inversion",
+      "offset": 0
+    },
+    {
+      "compared_rows": 115,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 5.217391,
+      "mismatches": 6,
+      "name": "no_extra_prediction_inversion",
+      "offset": 0
+    },
+    {
+      "compared_rows": 114,
+      "invert_prediction": false,
+      "mismatch_rate_percent": 3.508772,
+      "mismatches": 4,
+      "name": "no_inversion_offset_minus_1",
+      "offset": -1
+    }
+  ],
+  "rows": {
+    "ground_truth": 115,
+    "prediction": 115
+  }
+}

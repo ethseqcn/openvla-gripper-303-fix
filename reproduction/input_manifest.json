@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "inputs": [
+    {
+      "path": "fractal20220817_data_original_actions.csv",
+      "url": "https://raw.githubusercontent.com/lovecode1/OpenVLA-Gripper-Accuracy-Issue/main/fractal20220817_data_original_actions.csv",
+      "sha256": "e10699ab156e6e992a9f9db2ad6995a8ab63cf47cc0ee601f9cc67a2c9f9d3aa",
+      "role": "ground-truth gripper deltas"
+    },
+    {
+      "path": "fractal20220817_data_predicted_actions.csv",
+      "url": "https://raw.githubusercontent.com/lovecode1/OpenVLA-Gripper-Accuracy-Issue/main/fractal20220817_data_predicted_actions.csv",
+      "sha256": "1bea648ada2c43cd5cd5d14443c8d7e764beef94b52eaae8a43baa8d06eb467b",
+      "role": "OpenVLA predicted gripper states"
+    }
+  ],
+  "protocol": {
+    "ground_truth": "Accumulate the gripper delta in row order, clamp the state to [0, 1], then classify state >= 0.5 as 1.",
+    "prediction": "Classify the predicted gripper value >= 0.5 as 1.",
+    "alignment": "For offset k, compare ground-truth row i with prediction row i + k; rows without a counterpart are excluded.",
+    "scope": "This is a deterministic representation reconstruction from the published CSVs. It is not an intervention-based model-causality result."
+  }
+}
